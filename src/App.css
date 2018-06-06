@@ -1,3 +1,11 @@
+@media only screen and (max-width: 400px) {
+  .sh {
+    font-size: 4.4rem;
+  }
+}
+
 .box{
   height: 600px;
 }
+
+
