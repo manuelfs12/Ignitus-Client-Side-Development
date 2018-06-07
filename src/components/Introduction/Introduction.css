@@ -1,14 +1,6 @@
-@media only screen and (max-width: 400px) {
-  .sh {
-    font-size: 4.4rem;
-  }
-}
 
-.main {
-  margin-top: 65px;
-  background-color: #f2f2f2;
-}
+
 
 .ignitus-color {
-	color: #221d66;
+  color: #221d66;
 }
