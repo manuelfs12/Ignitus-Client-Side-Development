@@ -5,8 +5,7 @@ import expert from '../../images/expert.png';
 import IntroducingIgnitus from '../IntroducingIgnitus/introducingignitus';
 
 import './Introduction.css';
-import './custom.scss';
-import '../../App.css';
+
 
 const Card= (props) => {
  return ( 
@@ -55,9 +54,3 @@ export default class App extends Component {
 }
      
 
-
-    // <div className="">
-    //      <img src=""/>
-            // 
- 
-    //      </div>

@@ -1,16 +1,62 @@
-@media only screen and (max-width: 400px) {
-  .sh {
-    font-size: 3.6rem;
-  }
+
+
+.col-sm-6 {
+	font-size: ;
 }
 
 .main {
-  margin-top: 65px;
+  margin-top: 67px;
   background-color: #f2f2f2;
 }
 
-
-
-.ignitus-color {
-  color: #221d66;
+.intro {
+	font-weight: 600;
+	letter-spacing: 5px;
+	font-size: 6vmax;
 }
+
+.ig-ur-re {
+	font-size: 2rem;
+	letter-spacing: 3px;
+} 
+
+.ign {
+	font-size: 6vmax;
+	font-weight: 700;
+	color: #221d66;
+}
+
+.sky {
+	letter-spacing: 3px;
+	font-size: 1.2rem;
+}
+
+
+/* @media only screen and (min-width: 481px) and (max-width :768px) {
+  .intro {
+  	font-size: 1.5rem;
+  }
+}
+@media (min-width:640px) and (max-width: 768px) {
+	 .intro {
+  	font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width:992px){
+	 .intro {
+  	font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width:1200px) {
+	 .intro {
+  	font-size: 1.5rem;
+  }
+}*/
+
+/*.img-1, h1 {
+	border: 1px solid black;
+}
+*/
+

@@ -9,7 +9,9 @@ class App extends Component {
   render() {
     return (
       <div>
-    	<Login/>
+       <Navigation/>
+       <Introduction/>
+       <Footer/>
       </div>
     );
   }
