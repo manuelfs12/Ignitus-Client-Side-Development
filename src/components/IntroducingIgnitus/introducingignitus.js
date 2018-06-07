@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ui from '../../images/ui1.png';
 import './introducingignitus.css';
 
@@ -8,7 +8,7 @@ const IntroducingIgnitus =() =>{
          <div className="main row">
             <div className="col-sm-1"></div>
             <div className="col-sm-5 " >
-              <img src={ui} alt="banner-image" className="mt-5 pt-2 px-2 float-left img-fluid"/>
+              <img src={ui} alt="" className="mt-5 pt-2 px-2 float-left img-fluid"/>
             </div>
             <div className="col-sm-5 container ">
               <h1 className="text-center mt-5 display-1 font-weight-normal sh" >Introducing</h1>

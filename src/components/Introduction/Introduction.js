@@ -11,7 +11,7 @@ import '../../App.css';
 const Card= (props) => {
  return ( 
   <div className="shadow col-sm-3 m-auto mb-5 card">
-    <img className="card-img-top img-fluid  mt-2" alt="card-image" src={props.image} />
+    <img className="card-img-top img-fluid  mt-2" alt="card" src={props.image} />
     <h5 className="card-title text-center text-dark font-weight-bold mt-3">{props.title}</h5>
     <p className = "card-text text-center p-4">{props.description}</p>
   </div>
