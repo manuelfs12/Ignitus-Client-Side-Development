@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import pic from './1.png';
-import './Display.css';
+import pic from '../../Images/1.png';
+import './Team.css';
 
-class Display extends Component{
+
+class Team extends Component{
 	render()
 	{
 	    const Images_array = [pic,pic,pic,pic];
@@ -18,14 +19,20 @@ class Display extends Component{
         )
       })
 	return (
-		<div>
+    <div>
+  
+          <div className = "col-sm-12 col-md-12 col-lg-12 col-xs-12 _align mt-4">
+              <div className = "_contributor">Our Team</div>
+              <div className = "_students_researchers" >We're led by a team who constanty questions, tinkers, and challenges to unlock great creativity around every turn. </div>
+         </div>
         	<div className = "container">
          	 <div className = "row">
             	{_html}
          	 </div>
       		 </div>
-       </div>
+    </div>
+
 	);
 	}
 }
-export default Display;
+export default Team;

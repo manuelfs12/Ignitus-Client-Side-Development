@@ -12,6 +12,7 @@ import Testimonial  from './components/Testimonial/Testimonial';
 import CardLayout   from './components/CardLayout/CardLayout';
 import Partner      from './components/Partners/Partners';
 import Data         from './components/Testimonial/testimonial_data';
+import Team      from './components/Team/Team';
 
 // import Login from './components/Login/Login';
 
@@ -31,6 +32,7 @@ class App extends Component {
             <Contributors />
           
             <Partner />
+            <Team/>
             <GetStarted />
             <Footer />
           </div>
