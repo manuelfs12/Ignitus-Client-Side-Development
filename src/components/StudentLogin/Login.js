@@ -27,7 +27,7 @@ class Login extends Component {
             email: this.state.formData.email,
             password: this.state.formData.passw
         }
-        axios.post(/*URL*/,data)
+        axios.post('',data)
             .then(response => console.log(response.data))
             .catch(err =>console.log(err))
     }
