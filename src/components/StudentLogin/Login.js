@@ -31,7 +31,8 @@ class Login extends Component {
             .then(response => console.log(response.data))
             .catch(err =>console.log(err))
     }
-
+    
+render() {
     return (
         <div>
         <Navigation/>
@@ -77,6 +78,7 @@ class Login extends Component {
         <Footer/>
         </div>
     )
+}
 }
 
 

@@ -30,6 +30,7 @@ class Signup extends React.Component{
             .catch(err =>console.log(err))
     }
 
+   render () {
     return (
         <div>
         <Navigation/>
@@ -74,6 +75,7 @@ class Signup extends React.Component{
         <Footer/>
         </div>
     )
+}
 }
 
 
