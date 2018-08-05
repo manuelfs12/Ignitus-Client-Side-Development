@@ -1,11 +1,37 @@
-import React from 'react';
+import React,{ Component } from 'react';
 import logo from '../../Images/Logos/logo white bg.png';
 import './Login.css';
 import loginImg from '../../Images/login.png';
 import Navigation from '../Navigation/Navigation';
 import Footer from '../Footer/Footer';
 
-const Login =(props) => {
+class Login extends Component {
+
+    state = {
+        formData: {
+            email: '',
+            passw: '',
+        },
+    }
+
+    handleChange = (e) => {
+        let newFormData = {...this.state.formData}
+        newFormData[e.target.name] = e.target.value;
+        this.checkValidity(e.target.name,e);
+        this.setState({formData: newFormData});
+    }
+
+    handleSubmit = (e) => {
+        e.preventDefault();
+        const data = {
+            email: this.state.formData.email,
+            password: this.state.formData.passw
+        }
+        axios.post(/*URL*/,data)
+            .then(response => console.log(response.data))
+            .catch(err =>console.log(err))
+    }
+
     return (
         <div>
         <Navigation/>
@@ -24,18 +50,18 @@ const Login =(props) => {
                     <div className = "my-4">
                         <img className = "img-fluid _img mx-auto d-block" src={logo}/>
                     </div>
-                    <form>
+                    <form onSubmit= {this.handleSubmit}>
                         <div className ="input-group form-group">
                             <div className="input-group-prepend">
                                <span className="input-group-text"><i className="fa fa-envelope-o fa-fw"></i></span>
                             </div>
-                            <input type="text" id= "email" className = "form-control" placeholder = "Email" />
+                            <input type="text" name= "email" className = "form-control" placeholder = "Email" onChange = {this.handleChange} required/>
                         </div> 
                         <div className ="input-group form-group">
                             <div className="input-group-prepend">
                                <span className="input-group-text"><i className="fa fa-key fa-fw"></i></span>
                             </div>
-                            <input type ="password" id ="pass" className = "form-control" placeholder = "Password" required/>
+                            <input type ="password" name ="passw" className = "form-control" placeholder = "Password"  onChange = {this.handleChange} required/>
                         </div>
                         <div className = "text-center mb-3 mt-3">
                             <button type="submit" className = "btn btn-success px-3 py-2"><b>Log in</b></button>

@@ -5,22 +5,33 @@ import './Signup.css';
 import Navigation from '../Navigation/Navigation';
 import Footer from '../Footer/Footer';
 
+import axios from 'axios';
 
 class Signup extends React.Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {value: ''};
-        this.handleChange = this.handleChange.bind(this);
+ 
+    state = {
+        formData: {
+            email: '',
+            password1: '',
+            password2: ''
+        },
     }
 
-    handleChange(e) {
-        this.setState({value: e.target.value})
+    handleChange = (e) => {
+        let newFormData = {...this.state.formData}
+        newFormData[e.target.name] = e.target.value;
+        this.checkValidity(e.target.name,e);
+        this.setState({formData: newFormData});
     }
 
-    handleSubmit(e) {
+    handleSubmit = (e) => {
         e.preventDefault();
+        const formData = {...this.state.formData}
+        axios.post(/*URL*/,formData)
+            .then(response => console.log(response.data))
+            .catch(err =>console.log(err))
     }
+
 
     render() {
 
@@ -29,7 +40,7 @@ class Signup extends React.Component {
         <Navigation/>
         <div className ="container _container-custom p-5">
             <div className="row shadow">
-
+                {/* Side Image */}
                 <div className="col-md-6 p-0 container-image">
                     <img className = "img-fluid _img-login d-block" src={loginImg}/>
                     <div className = 'text-below-image text-center'>
@@ -37,29 +48,29 @@ class Signup extends React.Component {
                         <p>Skyrocket your career with best global opportunities</p>
                     </div>
                 </div>
-        
+                {/* Form */}
                 <div className ="col-md-6  _container-form ">
                     <div className = "my-4">
                         <img className = "img-fluid _img mx-auto d-block" src={logo}/>
-                    </div>
-                    <form>
-                        <div className ="input-group form-group">
+                    </div> 
+                    <form onSubmit = {this.handleSubmit}>
+                        <div className ="input-group form-group ">
                             <div className="input-group-prepend">
                                <span className="input-group-text"><i className="fa fa-envelope-o fa-fw"></i></span>
                             </div>
-                            <input type="text" id= "email" className = "form-control" placeholder = "Email" value = {this.state.value} onChange={this.handleChange}/>
+                            <input type="text" name="email"  className = "form-control" placeholder = "Email" onChange={this.handleChange}/>
                         </div> 
                         <div className ="input-group form-group">
                             <div className="input-group-prepend">
                                <span className="input-group-text"><i className="fa fa-key fa-fw"></i></span>
                             </div>
-                            <input type ="password" id ="pass" className = "form-control" placeholder = "Password" required/>
+                            <input type ="password" name="password1" className = "form-control" placeholder = "Password"  onChange={this.handleChange} required/>
                         </div>
                         <div className ="input-group form-group">
                             <div className="input-group-prepend">
                                <span className="input-group-text"><i className="fa fa-key fa-fw"></i></span>
                             </div>
-                            <input type ="password" id ="pass" className = "form-control" placeholder = "Confirm Password" required/>
+                            <input type ="password" name="password2" className = "form-control" placeholder = "Confirm Password" onChange = {this.handleConfirmedPassword}  required/>
                         </div>
                         <div className = "text-center mb-3 mt-3">
                             <button type="submit" className = "btn btn-success px-3 py-2"><b>Sign up</b></button>

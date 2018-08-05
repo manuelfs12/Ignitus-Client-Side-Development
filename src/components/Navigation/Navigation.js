@@ -31,22 +31,22 @@ class Navigation extends Component {
               <li className="nav-item">
                 <a className="nav-link" href="https://bit.ly/2NwWLhp">Join</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Sign in
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <Link class="dropdown-item" to="/login/student">Student</Link>
-                  <Link class="dropdown-item" to="/login/professor">Professor</Link>
+                <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <Link className="dropdown-item" to="/login/student">Student</Link>
+                  <Link className="dropdown-item" to="/login/professor">Professor</Link>
                 </div>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Sign up
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <Link  class="dropdown-item" to="/signup/student">Student</Link>
-                  <Link class="dropdown-item" to="/signup/professor">Professor</Link>
+                <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <Link  className="dropdown-item" to="/signup/student">Student</Link>
+                  <Link className="dropdown-item" to="/signup/professor">Professor</Link>
                 </div>
               </li>
               
