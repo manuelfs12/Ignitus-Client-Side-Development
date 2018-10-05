@@ -39,8 +39,17 @@
 	justify-content: center;
 }
 
+img {
+	max-width: 150px;
+	width: 100%;
+
+}
+
 .card {
 	max-width: 300px;
+	width: 100%;
+	max-height: 152px;
+	height: 152px;
 	margin: 3%;
 	border-radius: 1.7rem;
 }
