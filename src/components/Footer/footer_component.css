@@ -1,15 +1,14 @@
 
 .link {
-	color: grey;
+	color:white;
 }
 
 .link:hover {
-	color: white;
+	color: darkgrey;
 	text-decoration: none;
 }
 
 .heading {
-	color: #d9d9d9;
 	font-weight: 500;
 }
 
@@ -26,4 +25,8 @@
 
 ._pd-left{
 	padding-left: 22px !important;
+}
+
+.bg-primary {
+	background-color: #011279 !important;
 }

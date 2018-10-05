@@ -6,8 +6,8 @@ import './footer_component.css';
 class Footer extends Component {
   render() {
     return (
-      
-      <footer className="bg-dark text-white mt-4">
+
+      <footer className="bg-primary text-white mt-4">
               <div className="container text-center text-md-left">
                 <div className="row">
                 <hr className="clearfix w-100 d-md-none" />
@@ -137,7 +137,7 @@ class Footer extends Component {
               <div className="footer-copyright text-center py-3 heading">© 2018 Copyright Ignitus
               </div>
 
-      </footer>                       
+      </footer>
     )
   }
 }
