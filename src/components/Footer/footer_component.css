@@ -25,3 +25,7 @@
 .bg-primary {
 	background-color: #011279 !important;
 }
+
+.col-md-2 {
+	margin: auto;
+}
