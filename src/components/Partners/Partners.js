@@ -20,7 +20,7 @@ class Partner extends Component {
 
         return(
 
-           <div className="col-4 card _card centered-image shadow"
+           <div className="col-lg-3 col-md-4 col-sm-6 col-12 card _card centered-image shadow"
                 key = {key}>
                 <img src={logo} width="150" alt={"logo"}/>
            </div>
