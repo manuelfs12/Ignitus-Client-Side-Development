@@ -6,7 +6,7 @@
 }
 
 ._heart{
-	color: #c52e32;
+	color: #4058CC;
 }
 
 ._students_researchers{
@@ -19,9 +19,9 @@
 }
 
 ._contributor{
-	font-weight: 800 !important;
+	font-weight: 300 !important;
 	font-size: 36px !important;
-	color: #0d0465 !important;
+	color: #01229E !important;
 }
 
 ._align-vertically {
@@ -33,4 +33,14 @@
 	text-align:center;
 	justify-content: center;
 	align-items: center;
+}
+
+.row {
+	justify-content: center;
+}
+
+.card {
+	max-width: 300px;
+	margin: 3%;
+	border-radius: 1.7rem;
 }

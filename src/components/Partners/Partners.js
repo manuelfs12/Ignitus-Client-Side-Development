@@ -14,32 +14,32 @@ class Partner extends Component {
 
   render() {
 
-    const Images_array = [Woo_tech_logo,Sugar_labs,gs_logo,lean_in,systers_logo,progate];
+    const Images_array = [systers_logo,gs_logo,Sugar_labs,Woo_tech_logo,progate,lean_in];
 
     let _html = Images_array.map(function (logo,key) {
 
         return(
 
-           <div className="col-lg-4 col-md-4 col-sm-6 col-12 _logo_css centered-image"
+           <div className="col-4 card centered-image shadow"
                 key = {key}>
-               <img src={logo} width="200" alt={"logo"}/>
-            </div>
+                <img src={logo} width="150" alt={"logo"}/>
+           </div>
         )
-      
+
     })
 
     return (
       <div>
 
-        <div className = "col-sm-12 col-md-12 col-lg-12 col-xs-12 _align mt-4">
-              <div className = "_contributor">Supporters & Partners</div>
+        <div className = "col-12 _align mt-4">
+              <div className = "_contributor">Partners</div>
               <div className = "_students_researchers" >
-                  Supported with <i className="fa fa-heart _heart"> </i> by following Organizations ...
+                  Supported with <i className="fa fa-heart _heart"> </i> by following Organizations
               </div>
          </div>
-        
+
         <div className = "container">
-          <div className = "row _align-vertically">
+          <div className = "row">
             {_html}
           </div>
         </div>
