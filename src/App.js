@@ -30,12 +30,12 @@ class App extends Component {
 
   constructor()
   {
-      super(); 
-      this.state = {isLoading: true} 
+      super();
+      this.state = {isLoading: true}
       console.log(this.state.isLoading);
   }
-  componentDidMount() 
-  { 
+  componentDidMount()
+  {
       setTimeout(() => this.setState({isLoading: false}), 3000)
       console.log("componentDidMount");
   }
@@ -54,13 +54,13 @@ if(this.state.isLoading){
           <div>
             <Navigation />
             <Introduction/>
-            
-            <CardLayout />
 
-            <Contributors />
-            <Team />
-            <Partner />
+            <CardLayout />
             <Testimonial slides = {Data}/>
+            <Contributors />
+            {/* <Team /> */}
+            <Partner />
+
             <GetStarted />
             <Footer />
           </div>
@@ -73,7 +73,7 @@ if(this.state.isLoading){
         <Route  path ='/signup/student' component ={SignupStudent}/>
       </Switch>
     );
-  
+
 
   }
 }
