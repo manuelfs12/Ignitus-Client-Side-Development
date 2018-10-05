@@ -8,7 +8,7 @@ class GetStarted extends Component {
     return (
 
         <div className = "bg-primary _align container-fluid">
-              <div className = "col-7 pt-5 _align _started text-white" >Get started for free - join thousands of students and researchers
+              <div className = "col-8 pt-5 _align _started text-white" > Join thousands of students and researchers
               already using Ignitus to share their knowledge, work together, and get amazing opportunites.</div>
               <a href="/signup" className="btn btn-lg _button text-uppercase" role="button">Sign Up</a>
          </div>
