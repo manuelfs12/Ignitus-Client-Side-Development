@@ -6,7 +6,7 @@
 }
 
 ._heart{
-    color: #c52e32;
+    color: #4058CC;
 }
 
 ._students_researchers{
@@ -20,9 +20,9 @@
 }
 
 ._contributor{
-    font-weight: 800 !important;
-    font-size: 36px !important;
-    color: #0d0465 !important;
+	font-weight: 300 !important;
+	font-size: 36px !important;
+	color: #01229E !important;
 }
 
 .centered-image {
@@ -30,4 +30,23 @@
     text-align:center;
     justify-content: center;
     align-items: center;
+}
+
+.row {
+	justify-content: center;
+}
+
+img {
+	max-width: 150px;
+	width: 100%;
+
+}
+
+._card-contributors {
+	max-width: 225px;
+	width: 100%;
+	max-height: 120px;
+	height: 120px;
+	margin: 3%;
+    border-radius: 1rem;
 }
