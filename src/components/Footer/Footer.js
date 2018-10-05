@@ -7,7 +7,7 @@ class Footer extends Component {
   render() {
     return (
 
-      <footer className="bg-primary text-white mt-4">
+      <footer className="bg-primary text-white">
               <div className="container text-center text-md-left">
                 <div className="row">
                 <hr className="clearfix w-100 d-md-none" />
@@ -48,10 +48,10 @@ class Footer extends Component {
                     </ul>
                   </div>
 
-                  <div className="col-md-2 mx-auto _pd-left">
+                  <div className="col-md-2 mx-auto mb-5">
                     <ul className="list-unstyled">
                       <li>
-                        <img src={logo} className="img-responsive img-css" alt={"logo"}/>
+                        <img src={logo} className="img-fluid img-css" alt={"logo"}/>
                       </li>
                     </ul>
                   </div>

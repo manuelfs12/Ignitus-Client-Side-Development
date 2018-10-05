@@ -13,18 +13,13 @@
 }
 
 .img-css {
-	width: 100px;
-	height: 100px;
+	width: 100%;
+	height: 100%;
 	align-self: middle;
-	margin:50px 20px;
 }
 
 ._color{
 	color: white;
-}
-
-._pd-left{
-	padding-left: 22px !important;
 }
 
 .bg-primary {
