@@ -22,7 +22,8 @@
 ._contributor{
 	font-weight: 300 !important;
 	font-size: 36px !important;
-	color: #01229E !important;
+    color: #01229E !important;
+    margin-top: 10%;
 }
 
 .centered-image {
