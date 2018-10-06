@@ -24,7 +24,7 @@ class CarouselSlide extends Component {
       <li
         className={
           this.props.index === this.props.activeIndex
-            ? "carousel__slide carousel__slide--active "
+            ? "carousel__slide carousel__slide--active p-4 card _card-testimonial shadow"
             : "carousel__slide"
         }
       >
@@ -150,37 +150,42 @@ class Testimonial extends Component {
 
   render() {
     return (
-      <div className="carousel">
-        <div>
-          <CarouselLeftArrow onClick={e => this.goToPrevSlide(e)} />
+      <section id="testimonial">
+        <div className="col _align">
+          <div className="_testimonial">Testimonial</div>
         </div>
-        <div>
-          <ul className="carousel__slides container">
-            {this.props.slides.map((slide, index) => (
-              <CarouselSlide
-                key={index}
-                index={index}
-                activeIndex={this.state.activeIndex}
-                slide={slide}
-              />
-            ))}
-          </ul>
-          <ul className="carousel__indicators">
-            {this.props.slides.map((slide, index) => (
-              <CarouselIndicator
-                key={index}
-                index={index}
-                activeIndex={this.state.activeIndex}
-                isActive={this.state.activeIndex === index}
-                onClick={e => this.goToSlide(index)}
-              />
-            ))}
-          </ul>
+        <div className="carousel">
+          <div>
+            <CarouselLeftArrow onClick={e => this.goToPrevSlide(e)} />
+          </div>
+          <div>
+            <ul className="carousel__slides container">
+              {this.props.slides.map((slide, index) => (
+                <CarouselSlide
+                  key={index}
+                  index={index}
+                  activeIndex={this.state.activeIndex}
+                  slide={slide}
+                />
+              ))}
+            </ul>
+            <ul className="carousel__indicators">
+              {this.props.slides.map((slide, index) => (
+                <CarouselIndicator
+                  key={index}
+                  index={index}
+                  activeIndex={this.state.activeIndex}
+                  isActive={this.state.activeIndex === index}
+                  onClick={e => this.goToSlide(index)}
+                />
+              ))}
+            </ul>
+          </div>
+          <div className="arrow-fix">
+            <CarouselRightArrow onClick={e => this.goToNextSlide(e)} />
+          </div>
         </div>
-        <div className="arrow-fix">
-          <CarouselRightArrow onClick={e => this.goToNextSlide(e)} />
-        </div>
-      </div>
+      </section>
     );
   }
 }
