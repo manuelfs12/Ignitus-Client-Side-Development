@@ -166,7 +166,7 @@ margin-right: auto;
   height: 315px;
 }
 ._card-testimonial {
-  max-width: 800px;
-  width: 100%;
+  max-width: 800px !important;
+  width: 100% !important;
   border-radius: 1rem;
 }
