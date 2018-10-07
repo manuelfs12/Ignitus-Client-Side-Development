@@ -52,7 +52,7 @@ class CarouselLeftArrow extends Component {
     return (
       <a
         href="#"
-        className="carousel__arrow carousel__arrow--left padding-on-left"
+        className="carousel__arrow carousel__arrow--left"
         onClick={this.props.onClick}
       >
         <i className="fa fa-2x fa-angle-left"> </i>
@@ -66,7 +66,7 @@ class CarouselRightArrow extends Component {
     return (
       <a
         href="#"
-        className="carousel__arrow carousel__arrow--right padding-on-right"
+        className="carousel__arrow carousel__arrow--right"
         onClick={this.props.onClick}
       >
         <i className="fa fa-2x fa-angle-right"> </i>
