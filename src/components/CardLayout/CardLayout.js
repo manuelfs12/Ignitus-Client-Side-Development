@@ -1,9 +1,9 @@
 
 
 import React, { Component } from 'react';
-import Intern from '../../Images/Cards/intern1.png';
-import Offer from '../../Images/Cards/offer1.png';
-import Expert from '../../Images/Cards/expert1.png';
+import Intern from '../../Images/Cards/intern icon.png';
+import Offer from '../../Images/Cards/courses icon.png';
+import Expert from '../../Images/Cards/community icon.png';
 import Card from './Components/Card';
 import './card_component.css';
 
@@ -37,7 +37,7 @@ class CardLayout extends Component {
       <section id="what-we-do">
       <div>
           <div className="bg-white mt-5">
-              <div><h1 className="text-center my-5 ignitus-color">What will you find at Ignitus?</h1></div>
+              <div><h1 className="text-center ignitus-color">What will you find at Ignitus?</h1></div>
           <div className="col-xs-12 col-md-12 col-sm-12 col-xs-12 mt-5">
             <div className = "row">
            	  {_html}

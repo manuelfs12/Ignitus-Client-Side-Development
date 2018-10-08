@@ -2,32 +2,39 @@
 
 
 .ignitus-color{
-	font-weight: 800 !important;
+	font-weight: 300 !important;
     font-size: 36px !important;
-    color: #0d0465 !important;
-    margin-top: 40px;
+    color: #01229E !important;
+    margin-top: 10%;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.card-shadow {
-    /*box-shadow: 2px 5px 6px #e6faff;*/
-   /*box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+/* .card-shadow {
+    box-shadow: 2px 5px 6px #e6faff;
+   box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    border: 0;
-}
+} */
 
-.card-shadow:hover {
+/* .card-shadow:hover {
 	box-shadow:0 4px 8px 0 #999999, 0 6px 20px 0 #999999;
-}
+} */
 
-._card{
-	height:135px;
+/* ._card{
+    height:135px;
+} */
+
+.card {
+    max-width: 270px;
+    width: 100%;
+    border-radius: 2rem;
 }
 
 .card-img-top {
-    width: 40% !important;
-    height:90px !important;
-    margin: 20px 90px 20px 90px !important
+    width: 100% !important;
+    max-height:300px ;
+    /* height:90px !important; */
+    /* margin: 20px 90px 20px 90px !important */
 
 }
 
